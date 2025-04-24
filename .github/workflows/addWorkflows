@@ -12,6 +12,7 @@ permissions:
   contents: read # Мы разрешаем читать контент из нашего репозитория
   pages: write # разрешаем перезаписывать github page
   id-token: write # Разрешаем использовать GITHUB_TOKEN
+  env: PUBLIC_PATH: /github_actions/
 
 jobs: # Секция jobs определяет этапы процесса
  
