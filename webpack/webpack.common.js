@@ -89,7 +89,8 @@ module.exports = {
 				: 'static/styles/[name].css',
 		}),
 		new webpack.EnvironmentPlugin({
-			NODE_ENV: 'development', // значение по умолчанию 'development' если переменная process.env.NODE_ENV не передана
-		}),
+            PUBLIC_PATH: null, // значение по умолчанию null, если переменная process.env.PUBLIC_PATH не передана
+            NODE_ENV: 'development', // значение по умолчанию 'development', если переменная process.env.NODE_ENV не передана
+        }),
 	],
 };
